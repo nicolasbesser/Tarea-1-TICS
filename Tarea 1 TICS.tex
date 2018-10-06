@@ -1,0 +1,121 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%----------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Autora: Teresa Vargas %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\documentclass[11pt,letterpaper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.8cm,left=2.8cm,paper=letterpaper]{geometry}
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage[table]{xcolor}
+\usepackage{amsfonts}
+\usepackage{bigstrut}
+\usepackage{multirow}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{sectsty}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{appendix} 
+\usepackage{float}
+\usepackage[spanish]{babel}
+\usepackage{makeidx}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black]{hyperref} 
+\usepackage[none]{hyphenat}
+\usepackage{enumerate}
+%\usepackage[font={small}]{caption}
+\usepackage{blindtext}
+
+
+%%%%%%%%%%%%%%%%%%%%%% Margen chapter %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-70pt}{20pt}
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%Pie de pagina%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhf{}
+\fancyhead[R]{\textit{ \nouppercase{\rightmark}} }
+\fancyfoot[L]{Escuela de Ingeniería y Ciencias}
+\fancyfoot[R]{Universidad de Chile}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand*{\sectionmark}[1]{\markboth{\MakeUppercase{#1}}{}}
+
+%%%%%%%%%%%%%%%%%%%% definición color%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{color}
+\definecolor{gray51}{rgb}{0.51,0.51,0.51}
+\definecolor{gray71}{rgb}{0.71,0.71,0.71}
+\newcommand{\HRule}{\rule{\linewidth}{.4mm}}
+
+\usepackage{listings}
+\lstset{
+	tabsize=4,
+	language=Octave,
+        basicstyle=\scriptsize,
+        %upquote=true,
+        aboveskip={1.5\baselineskip},
+        columns=fixed,
+	numbers=left,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	frame=false,
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\ttfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+%	language=matlab
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%% Cambio nombres predeterminados%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\appendixname}{Anexo}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%Inclusión portada%%%%%%%%%%%%%%%%%%%%%%
+
+	\oddsidemargin 0cm \topmargin -2cm \textheight 21cm \textwidth
+	16.5cm \headheight 1cm \linespread {1.0} \headsep 1cm \parindent 0mm
+
+	\input{Portada}
+
+	\topmargin 0cm
+	\pagestyle{empty}
+	\pagestyle{fancy}
+	\pagenumbering{arabic}
+
+
+%%%%%%%%%%%%%%%%%%%%%%Espacio después del párrafo y sangría%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{8pt}
+\setlength{\parindent}{12pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%Comienzo informe%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Resumen Ejecutivo}
+
+\newpage
+
+\section*{Proyecto}
+
+
+\end{document}
